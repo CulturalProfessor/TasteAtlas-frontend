@@ -19,11 +19,14 @@ const AddNew = () => {
         e.preventDefault();
         try {
             const body = { user,title, country, description, link, category };
-            const resp = await fetch(`http://localhost:3080/newPost`, {
+            const resp = await fetch(
+              `https://tasteatlas-backend.onrender.com/newPost`,
+              {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(body),
-            });
+              }
+            );
             const jsonData = await resp.json();
             // setRecipe(jsonData);
             // redirect("/dashboard");
