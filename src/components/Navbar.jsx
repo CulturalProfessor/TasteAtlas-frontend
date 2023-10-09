@@ -40,7 +40,7 @@ const Navbar = (props) => {
                   loginWithRedirect({
                     redirect_uri:
                       // "http://127.0.0.1:5173/dashboard",
-                      "https://tasteatlas-frontend.onrender.com/",
+                      "https://tasteatlas-frontend.onrender.com/dashboard",
                   })
                 }
               >
