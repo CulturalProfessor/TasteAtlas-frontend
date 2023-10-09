@@ -37,11 +37,7 @@ const Navbar = (props) => {
               <button
                 className="bg-blue-500 px-4 py-1 rounded-lg text-white"
                 onClick={() =>
-                  loginWithRedirect({
-                    redirect_uri:
-                      // "http://127.0.0.1:5173/dashboard",
-                      "https://tasteatlas-frontend.onrender.com/dashboard",
-                  })
+                  loginWithRedirect()
                 }
               >
                 Login
