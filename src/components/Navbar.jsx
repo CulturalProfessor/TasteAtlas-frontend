@@ -78,9 +78,7 @@ const Navbar = (props) => {
             <li className="p-4 border-b border-[#507b14]">
               <button
                 onClick={() =>
-                  loginWithRedirect({
-                    redirect_uri: "https://tasteatlas-frontend.onrender.com/dashboard",
-                  })
+                  loginWithRedirect()
                 }
               >
                 Login
