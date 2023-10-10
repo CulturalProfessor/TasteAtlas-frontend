@@ -79,7 +79,7 @@ const Navbar = (props) => {
               <button
                 onClick={() =>
                   loginWithRedirect({
-                    redirect_uri: "https://tasteatlas-frontend.onrender.com/dashboard",
+                    redirect_uri: "https://tasteatlas-frontend.onrender.com",
                   })
                 }
               >
