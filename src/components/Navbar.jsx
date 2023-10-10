@@ -32,7 +32,7 @@ const Navbar = (props) => {
                 Logout
               </button>
               <Link to="/dashboard">
-                <button className="bg-[#507b14] px-4 py-1 rounded-lg text-white">
+                <button className="bg-[#507b14] px-4 py-1 mx-1  rounded-lg text-white">
                   Dashboard
                 </button>
               </Link>
@@ -40,7 +40,7 @@ const Navbar = (props) => {
           ) : (
             <li className="mt-1 mr-1">
               <button
-                className="bg-blue-500 px-4 py-1 mx-1 rounded-lg text-white"
+                className="bg-blue-500 px-4 py-1 rounded-lg text-white"
                 onClick={() => loginWithRedirect()}
               >
                 Login
@@ -76,6 +76,11 @@ const Navbar = (props) => {
               >
                 Logout
               </button>
+              <Link to="/dashboard">
+                <button className="bg-[#507b14] px-4 py-1 rounded-lg text-white">
+                  Dashboard
+                </button>
+              </Link>
             </li>
           ) : (
             <li className="p-4 border-b border-[#507b14]">
