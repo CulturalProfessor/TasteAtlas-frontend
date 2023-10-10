@@ -8,7 +8,7 @@ const Searchbar = (props) => {
         e.preventDefault();
         try {
             const response = await fetch(
-                `http://localhost:3080/getrecipe/${searchTitle}`
+                `https://tasteatlas-frontend.onrender.com/dashboard/getrecipe/${searchTitle}`
             );
             const jsonData = await response.json();
             setInfo(jsonData);

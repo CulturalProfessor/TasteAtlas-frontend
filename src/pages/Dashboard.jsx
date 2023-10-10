@@ -9,7 +9,7 @@ const Dashboard = () => {
     const renderCard = async (req, res) => {
         try {
             const response = await fetch(
-              `https://tasteatlas-backend.onrender.com/getrecipe/`
+              `https://tasteatlas-backend.onrender.com/getrecipe`
             );
             const jsonData = await response.json();
             setInfo(jsonData);
