@@ -31,18 +31,17 @@ const Navbar = (props) => {
               >
                 Logout
               </button>
+              <Link to="/dashboard">
+                <button className="bg-[#507b14] px-4 py-1 mx-1  rounded-lg text-white">
+                  Dashboard
+                </button>
+              </Link>
             </li>
           ) : (
             <li className="mt-1 mr-1">
               <button
                 className="bg-blue-500 px-4 py-1 rounded-lg text-white"
-                onClick={() =>
-                  loginWithRedirect({
-                    redirect_uri:
-                      // "http://127.0.0.1:5173/dashboard",
-                      "https://tasteatlas-frontend.onrender.com/",
-                  })
-                }
+                onClick={() => loginWithRedirect()}
               >
                 Login
               </button>
@@ -77,18 +76,15 @@ const Navbar = (props) => {
               >
                 Logout
               </button>
+              <Link to="/dashboard">
+                <button className="bg-[#507b14] px-4 py-1 rounded-lg text-white">
+                  Dashboard
+                </button>
+              </Link>
             </li>
           ) : (
             <li className="p-4 border-b border-[#507b14]">
-              <button
-                onClick={() =>
-                  loginWithRedirect({
-                    redirect_uri: "http://127.0.0.1:5173/dashboard",
-                  })
-                }
-              >
-                Login
-              </button>
+              <button onClick={() => loginWithRedirect()}>Login</button>
             </li>
           )}
           {/* <li className="p-4 border-b border-[#507b14]">Log in</li>{" "} */}

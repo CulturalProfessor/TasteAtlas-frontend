@@ -11,10 +11,10 @@ const App = () => {
         <div className="h-screen app font-ibm">
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" element={<LandingPage />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/dashboard/addNew" element={<AddNew />} />
+                    <Route exact path="/" element={<LandingPage />} />
+                    <Route exact path="/about" element={<About />} />
+                    <Route exact path="/dashboard" element={<Dashboard />} />
+                    <Route exact path="/dashboard/addNew" element={<AddNew />} />
                 </Routes>
             </BrowserRouter>
         </div>
