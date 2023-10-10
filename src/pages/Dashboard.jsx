@@ -37,6 +37,7 @@ const Dashboard = () => {
             description={info.description}
             link={info.link}
             user={info.user}
+            className="w-full md:w-1/2 lg:w-1/4"
           />
         ))}
       </div>
