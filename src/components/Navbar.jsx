@@ -31,14 +31,17 @@ const Navbar = (props) => {
               >
                 Logout
               </button>
+              <Link to="/dashboard">
+                <button className="bg-[#507b14] px-4 py-1 rounded-lg text-white">
+                  Dashboard
+                </button>
+              </Link>
             </li>
           ) : (
             <li className="mt-1 mr-1">
               <button
                 className="bg-blue-500 px-4 py-1 rounded-lg text-white"
-                onClick={() =>
-                  loginWithRedirect()
-                }
+                onClick={() => loginWithRedirect()}
               >
                 Login
               </button>
@@ -76,13 +79,7 @@ const Navbar = (props) => {
             </li>
           ) : (
             <li className="p-4 border-b border-[#507b14]">
-              <button
-                onClick={() =>
-                  loginWithRedirect()
-                }
-              >
-                Login
-              </button>
+              <button onClick={() => loginWithRedirect()}>Login</button>
             </li>
           )}
           {/* <li className="p-4 border-b border-[#507b14]">Log in</li>{" "} */}
