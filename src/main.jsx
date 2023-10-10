@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         domain="dev-78ppa2pl352jtdum.us.auth0.com"
         clientId="KammKzY2L9k9khJSopsuAMLXvW58LIzY"
         authorizationParams={{
-            redirect_uri: "http://127.0.0.1:5173/dashboard",
+            redirect_uri: `${window.location.origin}/dashboard`,
         }}
     >
         <App />

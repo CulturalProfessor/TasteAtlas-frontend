@@ -36,13 +36,7 @@ const Navbar = (props) => {
             <li className="mt-1 mr-1">
               <button
                 className="bg-blue-500 px-4 py-1 rounded-lg text-white"
-                onClick={() =>
-                  loginWithRedirect(
-                    {
-                      redirect_uri:"/dashboard"
-                    }
-                  )
-                }
+                onClick={() => loginWithRedirect()}
               >
                 Login
               </button>
